@@ -1,0 +1,26 @@
+Difference Between Unsigned Int and Signed Int?
+
+Unsigned Int can only hold zero and positive values whereas Signed Int can hold Zero, negative, and positive Integers. 
+And Same goes with float data type as well.
+
+Difference between Go and Java?
+
+Go is faster than java in terms of  Compilation speed.
+Go is way easier to code than java because of its writability.
+Go has good memory Management. Also In go we can not leave a variable decalred. All the variables declatred in Go must be used.
+
+Difference between Go and Python?
+
+Python is Dynamically Typed language and Go is statically typed language.
+Compilation time is less in Go Compared to Python.
+OOP not supported by Go lang whereas python supports OOP.	
+
+Advantages of Go:
+
+Main Advantage of Go is its Simplicity.
+Go can be used in various domains like Web Development, CLI's etc.,
+
+Disadvantages of Go:
+
+No function Overloading in Go.
+No Inheritance in Go.
