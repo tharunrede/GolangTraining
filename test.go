@@ -8,8 +8,9 @@ var python, java bool
 // fmt.Println("c outside", c)
 
 func main() {
-	var i int
-	c = 20
-	fmt.Println(i, c, python, java)
+	i := 10
+	j := 6.36
+	c := float64(i) * j
+	fmt.Println(c)
 
 }
