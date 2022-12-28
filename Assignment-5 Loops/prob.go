@@ -48,13 +48,16 @@ func main() {
 	fmt.Println()
 	fmt.Println("Problem-5")
 
-	fmt.Print("Enter your String(Golang Tutorial/ other): \n")
+	fmt.Println()
+	fmt.Println("Problem-5")
+
+	fmt.Print("Enter your String(Golang Training/ other): \n")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	input_str := scanner.Text()
 	fmt.Println("Input value is: ", input_str)
 
-	//fmt.Printf("type %T and value %v \n", input_str, input_str)
+	fmt.Printf("type %T and value %v \n", input_str, input_str)
 
 	if input_str == "Golang Training" {
 		fmt.Println("Welcome")

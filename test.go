@@ -4,23 +4,22 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"strings"
 )
 
 func main() {
 
-	consoleReader := bufio.NewReader(os.Stdin)
-	fmt.Print("Enter your String: \n")
+	fmt.Println()
+	fmt.Println("Problem-5")
 
-	input, _ := consoleReader.ReadString('\n')
+	fmt.Print("Enter your String(Golang Training/ other): \n")
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	input_str := scanner.Text()
+	fmt.Println("Input value is: ", input_str)
 
-	fmt.Println("input is ", input)
+	fmt.Printf("type %T and value %v \n", input_str, input_str)
 
-	flag := strings.Compare(input, "Golang tutorial")
-
-	//fmt.Printf("type %T and value is %v\n", flag, flag)
-
-	if flag == 1 {
+	if input_str == "Golang Training" {
 		fmt.Println("Welcome")
 	} else {
 		fmt.Println("End")
