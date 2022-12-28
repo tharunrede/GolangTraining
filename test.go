@@ -11,7 +11,7 @@ func main() {
 	fmt.Println()
 	fmt.Println("Problem-5")
 
-	fmt.Print("Enter your String(Golang Training/ other): \n")
+	fmt.Println("Enter your String(Golang Training/ other): \n")
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	input_str := scanner.Text()
