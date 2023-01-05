@@ -3,10 +3,11 @@ package main
 import "fmt"
 
 type shape interface {
-	area() float32
+	area() float64
+	//peri() float64
 }
 
-func info(i shape) float32 {
+func info(i shape) float64 {
 	return i.area()
 }
 
@@ -19,15 +20,21 @@ type circle struct {
 	radius int
 }
 
-func (sq square) area() float32 {
+func (sq square) area() float64 {
 
-	return float32(sq.length) * float32(sq.width)
+	return float64(sq.length) * float64(sq.width)
 
 }
 
-func (cir circle) area() float32 {
+func (sq square) peri() float64 {
 
-	return 3.14 * float32(cir.radius) * float32(cir.radius)
+	return float64(2 * (sq.length + sq.width))
+
+}
+
+func (cir circle) area() float64 {
+
+	return 3.14 * float64(cir.radius) * float64(cir.radius)
 
 }
 
